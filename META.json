@@ -1,0 +1,47 @@
+{
+   "abstract" : "Object-oriented interface for reading/writing SeaBASS files",
+   "author" : [
+      "Jason Lefler <jason.t.lefler@nasa.gov>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300025, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "SeaBASS-File",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "Date::Calc" : "0",
+            "Exporter" : "0",
+            "Fcntl" : "0",
+            "List::MoreUtils" : "0",
+            "Scalar::Util" : "0",
+            "constant" : "0",
+            "perl" : "5.008",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Clone" : "0",
+            "Test::More" : "0",
+            "Test::Trap" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "version" : "0.130250"
+}
+
