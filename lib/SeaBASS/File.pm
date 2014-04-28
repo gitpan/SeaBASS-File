@@ -9,11 +9,11 @@ SeaBASS::File - Object-oriented interface for reading/writing SeaBASS files
 
 =head1 VERSION
 
-version 0.130250
+version 0.141180
 
 =cut
 
-our $VERSION = '0.130250'; # VERSION
+our $VERSION = '0.141180'; # VERSION
 
 =head1 SYNOPSIS
 
@@ -1975,7 +1975,7 @@ sub read_headers {
             }
 
             if (ref($value)) {
-                for (my $i = 1; $i <= length(@{$value}); $i++) {
+                for (my $i = 1; $i < @$value; $i++) {
                     my $new_arg = $value->[$i];
                     for ($value->[$i] =~ /\$(\{\w+\}|\w+)/g) {
                         (my $variable = $_) =~ s/^\{|\}$//g;
@@ -2579,6 +2579,7 @@ sub julian_to_greg {
         my ($y, $m, $d) = Add_Delta_Days($1, 1, 1, $2 - 1);
         return sprintf('%04d%02d%02d', $y, $m, $d);
     }
+    return;
 } ## end sub julian_to_greg
 
 =head1 CAVEATS/ODDITIES

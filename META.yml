@@ -3,27 +3,27 @@ abstract: 'Object-oriented interface for reading/writing SeaBASS files'
 author:
   - 'Jason Lefler <jason.t.lefler@nasa.gov>'
 build_requires:
-  Clone: 0
-  Test::More: 0
-  Test::Trap: 0
+  Clone: '0'
+  Test::More: '0'
+  Test::Trap: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '6.30'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300025, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.015, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: SeaBASS-File
 requires:
-  Carp: 0
-  Date::Calc: 0
-  Exporter: 0
-  Fcntl: 0
-  List::MoreUtils: 0
-  Scalar::Util: 0
-  constant: 0
-  perl: 5.008
-  strict: 0
-  warnings: 0
-version: 0.130250
+  Carp: '0'
+  Date::Calc: '0'
+  Exporter: '0'
+  Fcntl: '0'
+  List::MoreUtils: '0'
+  Scalar::Util: '0'
+  constant: '0'
+  perl: '5.008'
+  strict: '0'
+  warnings: '0'
+version: '0.141180'

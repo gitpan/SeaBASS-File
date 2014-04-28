@@ -114,7 +114,6 @@ __DATA__
 /fields=lat,wt,sal,hour,minute,second,julian
 31.389 20.7320 -999 1 2 3 1
 <BR/>
-/measurement_depth=NA
 /fields=lat,wt,sal,hour,minute,Second,year,julian
 31.389 20.7320 -999 1 2 3 2010 1
 <BR/>

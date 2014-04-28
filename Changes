@@ -1,4 +1,8 @@
 
+0.141180  2014-04-28 12:54:23-04:00 EST5EDT
+
+	- fixed a bug in the fill_ancillary_data code 
+
 0.130250  2013-01-25 13:44:18 EST5EDT
 
 	- the first release
