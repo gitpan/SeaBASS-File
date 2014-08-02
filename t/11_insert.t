@@ -6,7 +6,7 @@ use Test::Trap qw(:default);
 use List::MoreUtils qw(firstidx each_array);
 use Clone qw(clone);
 
-use SeaBASS::File qw(STRICT_READ STRICT_WRITE INSERT_BEGINNING INSERT_END);
+use SeaBASS::File qw(STRICT_READ STRICT_WRITE STRICT_ALL INSERT_BEGINNING INSERT_END);
 
 my @DATA = split(m"<BR/>\s*", join('', <DATA>));
 my (@data_rows, @data_rows_sal_undef, @data_rows_case_preserved);

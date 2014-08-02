@@ -4,7 +4,7 @@ use warnings;
 use Test::More tests => 40;
 use Test::Trap qw(:default);
 
-use SeaBASS::File qw(STRICT_READ STRICT_WRITE INSERT_BEGINNING INSERT_END);
+use SeaBASS::File qw(STRICT_READ STRICT_WRITE STRICT_ALL INSERT_BEGINNING INSERT_END);
 
 my @DATA = split(m"<BR/>\s*", join('', <DATA>));
 

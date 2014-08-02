@@ -4,7 +4,7 @@ use warnings;
 use Test::More tests => 26;
 use Test::Trap qw(:default);
 
-use SeaBASS::File qw(STRICT_READ STRICT_WRITE INSERT_BEGINNING INSERT_END);
+use SeaBASS::File qw(STRICT_READ STRICT_WRITE STRICT_ALL INSERT_BEGINNING INSERT_END);
 
 my @DATA = split(m"<BR/>\s*", join('', <DATA>));
 
@@ -52,7 +52,7 @@ trap {
 };
 is($trap->leaveby, 'return', "header check trap");
 
-trap {my $sb_file = SeaBASS::File->new(\$DATA[0], {headers => ['investigators=tony']});};
+trap {my $sb_file = SeaBASS::File->new(\$DATA[0], {headers => ['investigators=tony'], strict => STRICT_ALL});};
 is($trap->leaveby, 'die', "header override invalid line 1");
 
 trap {

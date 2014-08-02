@@ -4,12 +4,11 @@ use warnings;
 use Test::More tests => 2;
 use Test::Trap qw(:default);
 
-use SeaBASS::File qw(STRICT_READ STRICT_WRITE INSERT_BEGINNING INSERT_END);
+use SeaBASS::File qw(STRICT_READ STRICT_WRITE STRICT_ALL INSERT_BEGINNING INSERT_END);
 
 my @DATA = split(m"<BR/>\s*", join('', <DATA>));
-
-trap {my $sb_file = SeaBASS::File->new(\$DATA[2]);};
-like($trap->warn->[0], qr/Missing absolutely required header/, "absolutely required 1");
+trap {my $sb_file = SeaBASS::File->new(\$DATA[2], {strict => STRICT_READ});};
+like(join('',@{$trap->warn}), qr/Missing absolutely required header/, "absolutely required 1");
 is($trap->leaveby, 'die', "absolutely required 2");
 
 done_testing();

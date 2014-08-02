@@ -1,4 +1,11 @@
 
+0.142140  2014-08-01 23:33:06-04:00 EST5EDT
+
+	- added functions to manipulate messages
+	- added partial support for below detection limit
+	- silenced module unless strict is used
+	- stopped outputting blank units
+
 0.141180  2014-04-28 12:54:23-04:00 EST5EDT
 
 	- fixed a bug in the fill_ancillary_data code 
